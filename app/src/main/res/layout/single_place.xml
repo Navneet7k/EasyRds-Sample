@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+        android:orientation="vertical"
+        android:padding="10dip"
+
+        android:id="@+id/my_toolbar"
+        android:theme="@style/AppTheme"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+
+         >
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        card_view:cardCornerRadius="8dp">
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+
+    <!-- Name Label -->
+    <TextView
+        android:text="Name:"
+        android:id="@+id/la_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:layout_marginBottom="5dip"
+        android:textStyle="bold"/>
+    
+    <!--  Name Value -->
+    <TextView
+        android:id="@+id/name"
+        android:layout_below="@+id/la_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+    
+    <!-- Address Label -->
+    <TextView
+        android:text="Address:"
+        android:id="@+id/la_address"
+        android:layout_below="@+id/name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dip"
+        android:layout_marginBottom="5dip"
+        android:textStyle="bold"/>
+    
+    <!--  Address Value -->
+    <TextView
+        android:layout_below="@+id/la_address"
+        android:id="@+id/address"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+    
+    <!-- Phone Number Label -->
+    <TextView
+        android:id="@+id/phone"
+        android:layout_below="@+id/address"
+        android:layout_width="fill_parent"
+        android:text="phone"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"/>
+    
+    
+    <!-- Location Value -->
+    <TextView
+        android:id="@+id/location"
+        android:layout_below="@+id/phone"
+        android:text="location"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dip"
+        android:layout_marginBottom="5dip"/>
+       </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</android.support.v7.widget.Toolbar>
