@@ -79,8 +79,6 @@ public class MainActivity extends AppCompatActivity {
         // Getting listview
         lv = (ListView) findViewById(R.id.list);
 
-        // button show on map
-      //  btnShowOnMap = (Button) findViewById(R.id.btn_show_map);
 
         // calling background Async task to load Google Places
         // After getting places from Google all the data is shown in listview
@@ -173,8 +171,7 @@ public class MainActivity extends AppCompatActivity {
                             for (Place p : nearPlaces.results) {
                                 HashMap<String, String> map = new HashMap<String, String>();
 
-                                // Place reference won't display in listview - it will be hidden
-                                // Place reference is used to get "place full details"
+
                                 map.put(KEY_REFERENCE, p.reference);
 
                                 // Place name
