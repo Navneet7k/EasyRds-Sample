@@ -23,26 +23,18 @@ public class GooglePlaces {
 	// Google API Key
 	private static final String API_KEY = "AIzaSyBs9bdvkaJn0g3Ei9sWJK_5gcq70Y6pWho"; // place your API key here
 
-	//AIzaSyBR3-WWG1hLjA5h6Os4TMelLDdVvOKZxGE
-	//AIzaSyCRLa4LQZWNQBcjCYcIVYA45i9i8zfClqc
+
 
 	// Google Places serach url's
 	private static final String PLACES_SEARCH_URL = "https://maps.googleapis.com/maps/api/place/search/json?";
-//	private static final String PLACES_TEXT_SEARCH_URL = "https://maps.googleapis.com/maps/api/place/search/json?";
+
 	private static final String PLACES_DETAILS_URL = "https://maps.googleapis.com/maps/api/place/details/json?";
 
 	private double _latitude;
 	private double _longitude;
 	private double _radius;
 	
-	/**
-	 * Searching places
-	 * @param latitude - latitude of place
-	 * @params longitude - longitude of place
-	 * @param radius - radius of searchable area
-	 * @param types - type of place to search
-	 * @return list of places
-	 * */
+
 	public PlacesList search(double latitude, double longitude, double radius, String types)
 			throws Exception {
 
