@@ -21,7 +21,7 @@ public class GooglePlaces {
 	private static final HttpTransport HTTP_TRANSPORT = new NetHttpTransport();
 
 	// Google API Key
-	private static final String API_KEY = "AIzaSyBs9bdvkaJn0g3Ei9sWJK_5gcq70Y6pWho";
+	private static final String API_KEY = "apikey";
 
 
 
